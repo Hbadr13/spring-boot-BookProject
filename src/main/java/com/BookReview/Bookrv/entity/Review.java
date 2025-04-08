@@ -17,6 +17,7 @@ import jakarta.persistence.PrePersist;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 public class Review {
@@ -35,6 +36,7 @@ public class Review {
 
     @Min(1)
     @Max(5)
+    @NotNull
     private Integer rating;
 
     @Column
